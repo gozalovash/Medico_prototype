@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <title>Medico Cashback</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>medi</span>
+            <span>co</span>
+        </div>
+    </header>
+    <main>
+        <div class="result">
+            <p class="f-result-text">Recipt Successfully <span>Added</span></p>
+            <p class="s-result-text"><span>Fiscal ID:</span> <span class="id">{{ cashback.fiscal_id }}</span></p>
+        </div>
+        <div class="infos">
+            <div class="info">
+                <div class="main">
+                    <p>User Name</p>
+                    <div class="name-and-surname">
+                        Murad Quliev
+                    </div>
+                </div>
+                <div class="ico">ico</div>
+            </div>
+            <div class="info">
+                <div class="main">
+                    <p>Order Data</p>
+                    <div class="order-data">
+                        00/00/00
+                    </div>
+                </div>
+                <div class="ico">ico</div>
+            </div>
+            <div class="info">
+                <div class="main">
+                    <p>Order Value</p>
+                    <div class="order-value">
+                        {{cashback.order_value}}$
+                    </div>
+                </div>
+                <div class="ico">ico</div>
+            </div>
+            <div class="info">
+                <div class="main">
+                    <p>Cashback Value</p>
+                    <div class="cashback-value">
+                        {{cashback.cashback}}%
+                    </div>
+                </div>
+                <div class="ico">ico</div>
+            </div>
+        </div>
+        <div class="button">
+
+                <span>Confirm<i class="fas fa-angle-right"></i></span>
+
+        </div>
+        <div class="second-button" style="margin-bottom: 20px">
+
+                <span>Submit another code<i class="fa-solid fa-plus"></i></span>
+
+        </div>
+
+
+
+    </main>
+    <script src="https://kit.fontawesome.com/3cb2bc27fe.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+</html>
