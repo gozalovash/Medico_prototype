@@ -32,7 +32,8 @@ def database_check(item_list):
 def backend(fiscal_id):
     list = get_list(fiscal_id)
     marja_list = database_check(list)
-    return sum(marja_list)/len(marja_list)
+    cashback = sum(marja_list)/len(marja_list)
+    return cashback/100*int(get_order_value(fiscal_id))
 
 # def main():
 #     fiscal_id = input("Enter ur Fiscal id: \n")

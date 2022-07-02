@@ -176,7 +176,7 @@ main {
 .textarea textarea:focus {
     outline: none;
 }
-.button span{
+.button input,.button span{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -193,8 +193,9 @@ main {
     cursor: pointer;
 
 }
-.button span:active,
-.second-button span:active{
+.button input:active,
+.second-button span:active,
+.button span:active,{
     transform: scale(0.99);
     transition: .3s;
 }
