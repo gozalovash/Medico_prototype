@@ -33,7 +33,7 @@ def backend(fiscal_id):
     list = get_list(fiscal_id)
     marja_list = database_check(list)
     cashback = sum(marja_list)/len(marja_list)
-    return cashback/100*int(get_order_value(fiscal_id))
+    return round(cashback/100*int(get_order_value(fiscal_id)), 3)
 
 # def main():
 #     fiscal_id = input("Enter ur Fiscal id: \n")
